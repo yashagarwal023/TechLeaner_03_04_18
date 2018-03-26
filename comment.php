@@ -62,7 +62,7 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $abc = "SELECT * FROM comment_table order by id DESC";
-if($result = mysqli_query($conn,$abc)){
+if($result = mysqli_query($dbcon,$abc)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
             // echo "<tr>";

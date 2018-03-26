@@ -1,6 +1,9 @@
 <?php
 session_start();//session starts here
 
+include("../header.php");
+
+
 ?>
 
 
@@ -57,7 +60,7 @@ session_start();//session starts here
 
 <?php
 
-include("database/db_conection.php");
+include("../config.php");
 
 if(isset($_POST['login']))
 {
@@ -80,4 +83,8 @@ if(isset($_POST['login']))
       echo "<script>alert('Email or password is incorrect!')</script>";
     }
 }
+?>
+<?php
+
+include("../footer.php");
 ?>

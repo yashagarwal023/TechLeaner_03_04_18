@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("../header.php");
 
 if(!$_SESSION['email'])
 {
@@ -23,10 +24,24 @@ if(!$_SESSION['email'])
 echo $_SESSION['email'];
 ?>
 
+<br>
+<br>
+<br>
+<br>
 
-<h1><a href="logout.php">Logout here</a> </h1>
+<br>
+<br>
+<br>
+<br>
+Click below to logout here
+<h4><a href="logout.php">Logout here</a> </h4>
 
 
 </body>
 
 </html>
+
+<?php
+
+include("../footer.php");
+?>

@@ -1,3 +1,7 @@
+<?php
+include("../header.php");
+
+?>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -50,7 +54,7 @@
 
 <?php
 
-include("database/db_conection.php");//make connection here
+include("../config.php");//make connection here
 if(isset($_POST['register']))
 {
     $user_name=$_POST['name'];//here getting result from the post array after submitting the form.
@@ -95,4 +99,8 @@ exit();
 
 
 }
+?>
+<?php
+
+include("../footer.php");
 ?>

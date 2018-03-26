@@ -38,21 +38,54 @@
 			<!--left hand side options-->
 			<div class="collapse navbar-collapse" id="#mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="PEFAC Design.html" id="blink" style="color:black;">Home</a></li>
+					<li><a href="index.php" id="blink" style="color:black;">Home</a></li>
 					<li><a href="about.html" id="blink" style="color:black;">About</a></li>
 					<li><a href="donate.html" id="blink" style="color:black;">softwares</a></li>
 					<li><a href="donate.html" id="blink" style="color:black;">Operating system</a></li>
-					<li><a href="contact.php" id="blink" style="color:black;">Contact Us</a></li>
+					<li><a href="/TechLearner_03_04_18/contact.php" id="blink" style="color:black;">Contact Us</a></li>
 			</ul>
-			<!--right hand side options-->
-				<ul class="nav navbar-nav navbar-right">
-      		<li><button type="button" id="glyph" data-target="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-user" style="color:#00e500;"></span></button> </li>
-    	</ul>
+					<div id="notloggedin" class="dropdown" style="float: right">
+				    	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Signup
+				    	<span class="caret"></span></button>
+				    	<ul class="dropdown-menu" style="position:absolute;right:0px">
+				     		<li><a href="login/Admin_login.php">Admin login</a></li>
+				     		<li><a href="login/login.php">user login</a></li>
+				      	 	<li><a href="login/Registration">Sign up user</a></li>
+				      	 	<li><a href="Logout.php">logout</a></li>
+				     	</ul>
+					</div>
+
+					<div id="loggedin" style="float: right">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="icon_user.png" alt="Profile image" class="img-circle" /><span class="caret"></span></button>
+		<ul class="dropdown-menu" style="position:absolute;right:0px">
+				      <li><a href="dashboard.php">Dashboard</a></li>
+				      <li><a href="logout.php" class="btn btn-danger">Logout</a></li>
+		</ul>
+	</div>
 			</div>
 		</div>
 	</nav>
 <style>
 
 	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		<?php 
+		if(isset($_SESSION['admin_name'])){
+
+		?>
+				$("#notloggedin").hide();
+		        $("#loggedin").show();
+		<?php
+		    }else{
+		?>
+		    	$("#notloggedin").show();
+		        $("#loggedin").hide();
+		<?php
+		    } 		
+		?>
+
+	</script>
 </body>
+
 </html>

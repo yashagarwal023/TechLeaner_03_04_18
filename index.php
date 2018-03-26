@@ -2,7 +2,7 @@
  
  include('config.php');
  include ('header.php');
- include ('footer.php');
+
  
 
 
@@ -21,5 +21,5 @@
     );
      
     // renderLayoutWithContentFile("home.php", $variables);
- 
+  include ('footer.php');
 ?>

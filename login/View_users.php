@@ -1,3 +1,8 @@
+<?php
+include("../header.php");
+
+?>
+
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -37,7 +42,7 @@
         </thead>
 
         <?php
-        include("database/db_conection.php");
+        include("../config.php");
         $view_users_query="select * from users";//select query for viewing users.
         $run=mysqli_query($dbcon,$view_users_query);//here run the sql query.
 
@@ -71,3 +76,7 @@
 </body>
 
 </html>
+<?php
+
+include("../footer.php");
+?>

@@ -1,3 +1,7 @@
+<?php
+include("../header.php");
+
+?>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -53,7 +57,7 @@
  * Date: 11/24/2014
  * Time: 3:26 AM
  */
-include("database/db_conection.php");
+include("../config.php");
 
 if(isset($_POST['admin_login']))//this will tell us what to do if some data has been post through form with button.
 {
@@ -72,5 +76,7 @@ if(isset($_POST['admin_login']))//this will tell us what to do if some data has 
     else {echo"<script>alert('Admin Details are incorrect..!')</script>";}
 
 }
+
+include("../footer.php");
 
 ?>

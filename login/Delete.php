@@ -5,7 +5,7 @@
  * Date: 11/24/2014
  * Time: 11:55 PM
  */
-include("database/db_conection.php");
+include("../config.php");
 $delete_id=$_GET['del'];
 $delete_query="delete  from users WHERE id='$delete_id'";//delete query
 $run=mysqli_query($dbcon,$delete_query);
