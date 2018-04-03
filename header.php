@@ -22,35 +22,30 @@
 	</style>
 </head>
 <body>
-<center><h1 id ="heading">Tech Learner</h2></center>
+
 	<nav class="navbar navbar-default" id="navigation">
 		<div class="container-fluid">
-			<!--meant for branding of the website-->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<img src="photo.jpg" class="navbar-brand" id="brand">
+				<div class="navbar-header">
+      				<a class="navbar-brand" href="/TechLearner_03_04_18/index.php">Tech Learner</a>
+  				  </div>
 
-			</div>
+			
 			<!--left hand side options-->
 			<div class="collapse navbar-collapse" id="#mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.php" id="blink" style="color:black;">Home</a></li>
-					<li><a href="about.html" id="blink" style="color:black;">About</a></li>
-					<li><a href="donate.html" id="blink" style="color:black;">softwares</a></li>
-					<li><a href="donate.html" id="blink" style="color:black;">Operating system</a></li>
+					<li><a href="/TechLearner_03_04_18/index.php" id="blink" style="color:black;">Home</a></li>
+					<li><a href="/TechLearner_03_04_18/about.php" id="blink" style="color:black;">About</a></li>
+					<li><a href="/TechLearner_03_04_18/softwares.php" id="blink" style="color:black;">softwares</a></li>
+					<li><a href="/TechLearner_03_04_18/os.php" id="blink" style="color:black;">Operating system</a></li>
 					<li><a href="/TechLearner_03_04_18/contact.php" id="blink" style="color:black;">Contact Us</a></li>
 			</ul>
 					<div id="notloggedin" class="dropdown" style="float: right">
 				    	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Signup
 				    	<span class="caret"></span></button>
 				    	<ul class="dropdown-menu" style="position:absolute;right:0px">
-				     		<li><a href="login/Admin_login.php">Admin login</a></li>
-				     		<li><a href="login/login.php">user login</a></li>
-				      	 	<li><a href="login/Registration">Sign up user</a></li>
+				     		<li><a href="/TechLearner_03_04_18/login/Admin_login.php">Admin login</a></li>
+				     		<li><a href="/TechLearner_03_04_18/login/login.php">user login</a></li>
+				      	 	<li><a href="/TechLearner_03_04_18/login/Registration.php">Sign up user</a></li>
 				      	 	<li><a href="Logout.php">logout</a></li>
 				     	</ul>
 					</div>
