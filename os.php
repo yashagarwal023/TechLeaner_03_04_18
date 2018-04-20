@@ -62,7 +62,7 @@ include ('header.php');
   margin: 0;
 }
 
-#myUL li a {
+#myUL li{
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6;
@@ -72,6 +72,13 @@ include ('header.php');
   color: black;
   display: block
 }
+
+#myUL a{
+	display: block;
+	color: white;
+}
+
+
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
@@ -104,9 +111,9 @@ include ('header.php');
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name of os " title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="#">Windows</a>
+  <li><a href="#"><font color="black">Windows</font></a>
    <br>
- <button type="button" class="btn btn-primary">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary"><a href="https://www.microsoft.com/en-in/software-download/windows10">ISO</a></button>&nbsp&nbsp
  <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
 
   <br>

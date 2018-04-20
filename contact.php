@@ -125,10 +125,10 @@ $message = $_POST["message"];
 $sql = "INSERT INTO contact_form(name,surname,email,phone,message) VALUES ('$name','$surname','$email',$phone,'$message')"; 
 
 //echo '<center> Comment Successfully Submitted </center>';
-if ($con->query($sql) === TRUE) {
+if ($dbcon->query($sql) === TRUE) {
     echo '<script type="text/javascript">alert("Inserted Successfully")</script>';
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $dbconn->error;
 }
 
 }

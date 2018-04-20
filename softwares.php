@@ -32,12 +32,126 @@ include ('header.php');
           <div class="container">
           
 <br>
+<center>
+<div id="container1">
+        
+          
+<br>
 
-  Computer software, or simply software, is a part of a computer system that consists of data or computer instructions, in contrast to the physical hardware from which the system is built. In computer science and software engineering, computer software is all information processed by computer systems, programs and data. Computer software includes computer programs, libraries and related non-executable data, such as online documentation or digital media. Computer hardware and software require each other and neither can be realistically used on its own.
 
-At the lowest level, executable code consists of machine language instructions specific to an individual processor—typically a central processing unit (CPU). A machine language consists of groups of binary values signifying processor instructions that change the state of the computer from its preceding state. For example, an instruction may change the value stored in a particular storage location in the computer—an effect that is not directly observable to the user. An instruction may also (indirectly) cause something to appear on a display of the computer system—a state change which should be visible to the user. The processor carries out the instructions in the order they are provided, unless it is instructed to "jump" to a different instruction, or is interrupted (by now multi-core processors are dominant, where each core can run instructions in order; then, however, each application software runs only on one core by default, but some software has been made to run on many).
+
+<h2>Softwares</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name of os " title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">VLC</a>
+   <br>
+ <button type="button" class="btn btn-primary" href="https://www.videolan.org/vlc/download-windows.html">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
+
+  <br>
+  </li>
   
+  <li><a href="#">Xampp server</a>
+   <br>
+ <button type="button" class="btn btn-primary">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
 
+  <br>
+  </li>
+
+ <li><a href="#">Icecream screenrecorder</a>
+   <br>
+ <button type="button" class="btn btn-primary">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
+
+  <br>
+  </li>
+
+
+<li><a href="#">Gimp</a>
+   <br>
+ <button type="button" class="btn btn-primary">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
+
+  <br>
+  </li>
+
+<li><a href="#">Cyberlink</a>
+   <br>
+ <button type="button" class="btn btn-primary">ISO</button>&nbsp&nbsp
+ <button type="button" class="btn btn-primary">YouTube Link</button>&nbsp&nbsp<br>
+
+  <br>
+  </li>
+
+</ul>
+<style type="text/css">
+	{
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+#container1
+{
+	width:1000px;
+	align:center;
+}
+
+	</style>
+</style>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+</center>
+</div>
 </body>
 </html>
 

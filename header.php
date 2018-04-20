@@ -10,7 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+<!-- 	<link rel="stylesheet" href="css/style.css"> -->
 
 	<style>
 	#heading
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default" id="navigation">
+	<nav class="navbar navbar-inverse" id="navigation">
 		<div class="container-fluid">
 				<div class="navbar-header">
       				<a class="navbar-brand" href="/TechLearner_03_04_18/index.php">Tech Learner</a>
@@ -33,11 +33,11 @@
 			<!--left hand side options-->
 			<div class="collapse navbar-collapse" id="#mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="/TechLearner_03_04_18/index.php" id="blink" style="color:black;">Home</a></li>
-					<li><a href="/TechLearner_03_04_18/about.php" id="blink" style="color:black;">About</a></li>
-					<li><a href="/TechLearner_03_04_18/softwares.php" id="blink" style="color:black;">softwares</a></li>
-					<li><a href="/TechLearner_03_04_18/os.php" id="blink" style="color:black;">Operating system</a></li>
-					<li><a href="/TechLearner_03_04_18/contact.php" id="blink" style="color:black;">Contact Us</a></li>
+					<li><a href="/TechLearner_03_04_18/index.php" id="blink" style="color:white;">Home</a></li>
+					<li><a href="/TechLearner_03_04_18/about.php" id="blink" style="color:white;">About</a></li>
+					<li><a href="/TechLearner_03_04_18/softwares.php" id="blink" style="color:white;">softwares</a></li>
+					<li><a href="/TechLearner_03_04_18/os.php" id="blink" style="color:white;">Operating system</a></li>
+					<li><a href="/TechLearner_03_04_18/contact.php" id="blink" style="color:white;">Contact Us</a></li>
 			</ul>
 					<div id="notloggedin" class="dropdown" style="float: right">
 				    	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Signup

@@ -1,7 +1,7 @@
 <?php
  
  include('config.php');
- include ('header.php');
+
 
  
 
@@ -23,14 +23,22 @@
 
 
     // renderLayoutWithContentFile("home.php", $variables);
-
+ 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title></title>
+       <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style7.css" />
+
+
 </head>
 <body>
+<?php
+include("header.php");
+?>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators" >
@@ -71,7 +79,56 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-
+<section class="main">
+      
+        <ul class="ch-grid">
+          <li>
+            <div class="ch-item" style="background-image: url(images/css1.jpg);">       
+              <div class="ch-info">
+                <div class="ch-info-front ch-img-1" style="background-image: url(images/css1.jpg);"></div>
+                <div class="ch-info-back">
+                  <h3>Youtube Links</h3>
+                  <p><a href="https://www.youtube.com/">Youtube Links for installing ISO and softwares</a></p>
+                </div>  
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item" style="background-image: url(images/css2.jpg);">
+              <div class="ch-info">
+                <div class="ch-info-front ch-img-2" style="background-image: url(images/css2.jpg);"></div>
+                <div class="ch-info-back">
+                  <h3>Softwares</h3>
+                  <p><a href="softwares.php">It contains for different operating system</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item" style="background-image: url(images/css3.jpg);">
+              <div class="ch-info">
+                <div class="ch-info-front ch-img-3" style="background-image: url(images/css3.jpg);"></div>
+                <div class="ch-info-back">
+                  <h3>OS</h3>
+                  <p><a href="os.php">It contains the .iso files</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item" style="background-image: url(images/css4.jpg);">
+              <div class="ch-info">
+                <div class="ch-info-front ch-img-3" style="background-image: url(images/css4.jpg);"></div>
+                <div class="ch-info-back">
+                  <h3>Admin pannel</h3>
+                  <p><a href="os.php">admin can delete fake user</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+      </section>
 </body>
 </html>
 
